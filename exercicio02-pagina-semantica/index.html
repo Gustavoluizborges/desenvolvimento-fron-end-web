@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Semântica - Semana de Tecnologia</title>
+</head>
+<body>
+  <header>
+    <h1>Semana de Tecnologia</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#programacao">Programação</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#inscricao">Inscrição</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre o evento</h2>
+      <p>A Semana de Tecnologia reúne estudantes para palestras e oficinas sobre desenvolvimento Web.</p>
+    </section>
+
+    <section id="programacao">
+      <h2>Programação</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Atividade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>Introdução ao HTML semântico</td>
+          </tr>
+          <tr>
+            <td>Terça</td>
+            <td>Oficina de CSS</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>Primeiros passos com JavaScript</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="noticias">
+      <h2>Notícias</h2>
+      <article>
+        <h3>Inscrições abertas</h3>
+        <p><time datetime="2026-09-08">8 de setembro de 2026</time></p>
+        <p>As inscrições para as oficinas já estão disponíveis. As vagas são limitadas.</p>
+      </article>
+      <article>
+        <h3>Novo laboratório</h3>
+        <p><time datetime="2026-09-01">1 de setembro de 2026</time></p>
+        <p>As oficinas práticas acontecerão no novo laboratório de informática.</p>
+      </article>
+    </section>
+
+    <section id="inscricao">
+      <h2>Inscrição</h2>
+      <form>
+        <p>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </p>
+        <p>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="oficina">Oficina:</label>
+          <select id="oficina" name="oficina">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+          </select>
+        </p>
+        <button type="button">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <p>Dica: leve seu notebook para as oficinas.</p>
+  </aside>
+
+  <footer>
+    <p>Semana de Tecnologia - atividade acadêmica de Desenvolvimento Front-End para Web.</p>
+  </footer>
+</body>
+</html>
