@@ -1,0 +1,178 @@
+/* Paleta (4 cores): #0b3954 azul, #087e8b verde-água, #ff5a5f coral, #f5f7fa fundo */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Seletores de elemento */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #0b3954;
+  background-color: #f5f7fa;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+/* Propriedade nova 1: clamp() para títulos fluidos */
+h2 {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+}
+
+/* Cabeçalho com Flexbox */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 32px;
+  background-color: #0b3954;
+  color: #f5f7fa;
+}
+
+.marca h1 {
+  margin: 0;
+}
+
+.slogan {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Seletor de id */
+#menu-principal {
+  display: flex;
+  gap: 20px;
+}
+
+/* Seletor hierárquico (descendente) */
+.menu a {
+  color: #f5f7fa;
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.menu a:hover,
+.menu a:focus {
+  border-bottom-color: #ff5a5f;
+}
+
+/* Apresentação: propriedade nova 2: linear-gradient() */
+.apresentacao {
+  padding: 64px 32px;
+  text-align: center;
+  color: #f5f7fa;
+  background: linear-gradient(135deg, #087e8b, #0b3954);
+}
+
+.apresentacao p {
+  max-width: 640px;
+  margin: 0 auto 24px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  background-color: #ff5a5f;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.botao:hover,
+.botao:focus {
+  transform: scale(1.05);
+}
+
+/* Destaques: cards com Grid */
+.destaques {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Propriedade testada e mantida: box-shadow */
+.card {
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #dde3ea;
+  border-radius: 12px;
+  border-top: 6px solid #087e8b;
+  box-shadow: 0 4px 12px rgba(11, 57, 84, 0.08);
+}
+
+/* Contato */
+.contato {
+  max-width: 520px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
+}
+
+.aviso {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"] {
+  padding: 10px;
+  border: 1px solid #b8c4d0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.formulario input:focus {
+  outline: 3px solid #087e8b;
+  outline-offset: 2px;
+}
+
+/* Propriedade nova testada: accent-color (cor do checkbox) */
+.opcao input {
+  accent-color: #ff5a5f;
+}
+
+.rodape {
+  padding: 24px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #f5f7fa;
+  background-color: #0b3954;
+}
+
+.rodape p {
+  margin: 4px 0;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
