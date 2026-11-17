@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+.painel {
+  text-align: center;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #393e46;
+  min-width: 280px;
+}
+
+.numero {
+  font-size: 72px;
+  font-weight: bold;
+  margin: 16px 0;
+  transition: color 0.3s;
+}
+
+.mensagem {
+  min-height: 1.2em;
+  color: #cccccc;
+}
+
+.botoes {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.botoes button {
+  padding: 12px 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #00adb5;
+  color: #fff;
+}
+
+.botoes button:hover {
+  background-color: #007f85;
+}
+
+.zero { color: #eeeeee; }
+.baixo { color: #7bed9f; }
+.alto { color: #ffa502; }
+.maximo { color: #ff4757; }
