@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passo Firme - Clube de Corrida</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="marca">
+      <h1>Passo Firme</h1>
+      <p class="slogan">Clube de corrida para quem está começando</p>
+    </div>
+    <nav id="menu-principal" class="menu">
+      <a href="#apresentacao">Início</a>
+      <a href="#destaques">Treinos</a>
+      <a href="#contato">Participe</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="apresentacao" class="apresentacao">
+      <h2>Corra no seu ritmo, junto com a gente</h2>
+      <p>O Passo Firme é um clube fictício que reúne iniciantes para treinos leves no parque,
+        sempre com aquecimento, acompanhamento e muita conversa boa.</p>
+      <a href="#contato" class="botao">Quero participar</a>
+    </section>
+
+    <section id="destaques" class="destaques">
+      <h2>Nossos treinos</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Primeiros 5 km</h3>
+          <p>Plano de 8 semanas alternando caminhada e corrida até completar 5 km.</p>
+        </article>
+        <article class="card">
+          <h3>Treino de sábado</h3>
+          <p>Encontro semanal no parque com grupos separados por ritmo.</p>
+        </article>
+        <article class="card">
+          <h3>Força e mobilidade</h3>
+          <p>Exercícios simples para evitar lesões e melhorar a postura na corrida.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Participe</h2>
+      <p class="aviso">Formulário demonstrativo - os dados não serão enviados.</p>
+      <form class="formulario">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+
+        <label class="opcao" for="iniciante">
+          <input type="checkbox" id="iniciante" name="iniciante">
+          Nunca corri antes
+        </label>
+
+        <button type="button" class="botao">Enviar inscrição</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Grupo: Gustavo Luiz Borges | Turma: Desenvolvimento Front-End para Web 2026/2</p>
+    <p>Atividade acadêmica - o clube e as informações são fictícios.</p>
+  </footer>
+</body>
+</html>
