@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f4f6fb;
+  color: #1c2333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cabecalho {
+  padding: 32px 16px;
+  text-align: center;
+  background-color: #3a5a98;
+  color: #fff;
+}
+
+.cabecalho h1 {
+  margin: 0 0 8px;
+}
+
+.painel {
+  max-width: 560px;
+  margin: 32px auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario label {
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #b6bfd1;
+  border-radius: 8px;
+}
+
+.botoes {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.botao {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #3a5a98;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.botao:hover {
+  background-color: #263f6e;
+}
+
+.botao-secundario {
+  background-color: #6c757d;
+}
+
+.botao-secundario:hover {
+  background-color: #495057;
+}
+
+.area-resultado {
+  margin-top: 24px;
+}
+
+.resultado {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #e8eefb;
+}
+
+.mensagem-sucesso {
+  background-color: #e3f6e8;
+  border-left: 6px solid #2e9e4f;
+}
+
+.mensagem-erro {
+  background-color: #fde8e8;
+  border-left: 6px solid #c62828;
+  color: #8e1b1b;
+}
+
+.rodape {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+}
+
+/* Tema escuro, ativado pelo JavaScript com classList.toggle() */
+body.tema-escuro {
+  background-color: #121826;
+  color: #e6e9ef;
+}
+
+.tema-escuro .painel {
+  background-color: #1e2638;
+}
+
+.tema-escuro .formulario input,
+.tema-escuro .formulario select {
+  background-color: #2a3349;
+  color: #e6e9ef;
+  border-color: #475273;
+}
+
+.tema-escuro .resultado {
+  background-color: #2a3349;
+}
+
+.tema-escuro .mensagem-sucesso {
+  background-color: #1f3b2a;
+}
+
+.tema-escuro .mensagem-erro {
+  background-color: #4a1f24;
+  color: #ffc9c9;
+}
+
+/* Telas menores */
+@media (max-width: 600px) {
+  .painel {
+    margin: 16px;
+  }
+
+  .botoes {
+    flex-direction: column;
+  }
+}
