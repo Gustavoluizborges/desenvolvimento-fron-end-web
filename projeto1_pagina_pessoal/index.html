@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guga - Minha identidade na Web</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px;
+      line-height: 1.6;
+      color: #222;
+    }
+    header, footer {
+      padding: 16px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    footer {
+      border-top: 1px solid #ddd;
+      border-bottom: none;
+      font-size: 14px;
+    }
+    nav a {
+      margin-right: 12px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e9f0f5;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Guga - Minha identidade na Web</h1>
+    <nav>
+      <a href="#apresentacao">Apresentação</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#interesses">Interesses e objetivos</a>
+      <a href="#estudos">Estudos</a>
+      <a href="#midia">Mídia</a>
+      <a href="#contato">Contato</a>
+      <a href="paginas/interesses.html">Meu hobby</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="apresentacao">
+      <h2>Apresentação</h2>
+      <img src="imagens/avatar.svg" alt="Avatar ilustrado de uma pessoa com o símbolo de código no rosto" width="160">
+      <p>Olá! Meu nome de apresentação é <strong>Guga</strong>. Sou estudante de Desenvolvimento
+        Front-End para Web e já trabalho criando personalizações para lojas virtuais.</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Comecei a programar mexendo no visual de lojas virtuais: ajustando layouts, criando
+        componentes e melhorando a experiência de quem compra pelo celular. Com o tempo percebi
+        que entender bem a base (HTML, CSS e JavaScript) faz toda a diferença no resultado.</p>
+      <p>Neste curso quero organizar o que aprendi na prática, preencher lacunas e escrever um
+        código mais semântico e acessível. Fora do computador, gosto de tocar violão e de correr.</p>
+    </section>
+
+    <section id="interesses">
+      <h2>Interesses e objetivos</h2>
+      <h3>Meus interesses</h3>
+      <ul>
+        <li>Desenvolvimento Front-End e e-commerce</li>
+        <li>Música, principalmente violão e rock nacional</li>
+        <li>Corrida de rua e musculação</li>
+      </ul>
+
+      <h3>Objetivos de aprendizagem</h3>
+      <ol>
+        <li>Escrever HTML semântico e acessível desde o início do projeto.</li>
+        <li>Dominar layouts responsivos com Flexbox e Grid.</li>
+        <li>Usar JavaScript para criar interações sem depender de bibliotecas.</li>
+      </ol>
+    </section>
+
+    <section id="estudos">
+      <h2>Estudos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tema</th>
+            <th>Conhecimento atual</th>
+            <th>Próximo passo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML semântico</td>
+            <td>Uso header, main e footer</td>
+            <td>Aplicar section e article com mais critério</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Estilizo componentes de lojas virtuais</td>
+            <td>Aprofundar Grid e media queries</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Manipulo o DOM em scripts simples</td>
+            <td>Organizar o código em funções reutilizáveis</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Veja também a página sobre o meu hobby:
+        <a href="paginas/interesses.html">aprendendo violão</a>.</p>
+    </section>
+
+    <section id="midia">
+      <h2>Mídia</h2>
+      <p>Como estou aprendendo violão, gravei aqui um acorde de Mi maior dedilhado.
+        É um dos primeiros acordes que aprendi.</p>
+      <audio controls>
+        <source src="midias/acorde-mi-maior.wav" type="audio/wav">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+      <p>Fonte: áudio sintetizado pelo autor (arquivo local).</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p><strong>Formulário demonstrativo - os dados não serão enviados.</strong></p>
+      <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea>
+
+        <p><button type="button">Enviar mensagem</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto 1 - Minha identidade na Web | Desenvolvimento Front-End para Web 2026/2.</p>
+    <p>Links úteis:
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN - HTML</a> |
+      <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools - HTML</a>
+    </p>
+    <p>Imagens e áudio: criados pelo autor.</p>
+  </footer>
+</body>
+</html>
