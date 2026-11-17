@@ -1,0 +1,58 @@
+/* Seletores de elemento */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f7f3ee;
+  color: #333;
+}
+
+h2 {
+  color: #8a3b12;
+}
+
+/* Seletores de classe */
+.cabecalho {
+  background-color: #8a3b12;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-style: italic;
+  margin: 0;
+}
+
+.conteudo {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item {
+  background-color: #fff;
+  padding: 10px;
+  border-left: 4px solid #d9a066;
+}
+
+.destaque {
+  border-left-color: #2e7d32;
+  font-weight: bold;
+}
+
+.preco {
+  float: right;
+  color: #2e7d32;
+}
+
+.aviso {
+  font-size: 14px;
+  color: #666;
+}
+
+.rodape {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #eee;
+}
