@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursos multimídia - Vídeo e Áudio</title>
+</head>
+<body>
+  <header>
+    <h1>Recursos multimídia no HTML</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Vídeo</h2>
+      <p>O elemento <code>&lt;video&gt;</code> permite exibir vídeos diretamente na página, com controles de reprodução.</p>
+      <video controls width="400">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+      <p>Vídeo de uma flor desabrochando. Fonte: exemplos de mídia de domínio público (CC0) da MDN Web Docs.</p>
+    </section>
+
+    <section>
+      <h2>Áudio</h2>
+      <p>O elemento <code>&lt;audio&gt;</code> funciona de forma parecida, mas apenas com som.</p>
+      <audio controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+      <p>Som de um rugido. Fonte: exemplos de mídia de domínio público (CC0) da MDN Web Docs.</p>
+    </section>
+
+    <section>
+      <h2>Atributos usados</h2>
+      <ul>
+        <li><strong>controls</strong>: exibe os botões de play, pausa e volume.</li>
+        <li><strong>source</strong>: indica o arquivo de mídia e o seu tipo.</li>
+        <li><strong>width</strong>: define a largura do vídeo.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Exercício 3 - Desenvolvimento Front-End para Web.</p>
+  </footer>
+</body>
+</html>
