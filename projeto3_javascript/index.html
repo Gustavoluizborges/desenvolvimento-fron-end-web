@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubra seu caminho no Front-End</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Descubra seu caminho no Front-End</h1>
+    <p>Informe seu nome, escolha uma área e receba uma orientação personalizada.</p>
+  </header>
+
+  <main class="painel">
+    <form id="formulario" class="formulario">
+      <label for="nome">Seu nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Ex.: Ana">
+
+      <label for="area">Área de interesse</label>
+      <select id="area" name="area">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+
+      <div class="botoes">
+        <button type="button" id="botao-orientacao" class="botao">Gerar orientação</button>
+        <button type="button" id="botao-tema" class="botao botao-secundario">Alterar tema</button>
+      </div>
+    </form>
+
+    <section class="area-resultado" aria-live="polite">
+      <h2>Orientação</h2>
+      <p id="resultado" class="resultado">Sua orientação aparecerá aqui.</p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto 3 - Painel Interativo | Desenvolvimento Front-End para Web 2026/2</p>
+  </footer>
+</body>
+</html>
